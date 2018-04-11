@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdbool.h>
+#include<conio.h>
 void WaitingTime(int process[], int n,int burst[], int wt[], int quan)
 {
     int i,t,rem[n];
@@ -126,15 +127,13 @@ int main()
         printf("\n");
     }
 
-    printf("counter operator spends 1st one hour for handling student queries: \n\n");
+    printf("Cpu spends 1st one hour for handling student queries: \n\n");
     AvgTime(p, n, burst_time, quantum,'s'); 
     n = sizeof p1 / sizeof p1[0];
     printf("\n\n");
     
-    printf("Counter operator spends 2nd one hour for handling Faculty queries: \n\n");
+    printf("Cpu spends 2nd one hour for handling Faculty queries: \n\n");
     AvgTime(p1, n ,burst_time1,quantum,'f');
-    printf("\n\n\n");
-    
-    printf("We Used TIME QUANTUM = 5:\n");
+    printf("\n\n\n We Used TIME QUANTUM = 5:\n");
     return 0;
 }
